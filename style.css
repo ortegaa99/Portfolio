@@ -1,0 +1,167 @@
+.image-container {
+    width: 100vw;
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+
+header {
+    position: absolute; /* o fixed si quieres que se mantenga siempre visible */
+    top: 20px;
+    left: 30px;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    padding: 1rem;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+li{
+    color: white;
+}
+nav{
+    font-family: "Poppins";
+}
+
+a {
+    color: inherit;         /* Toma el color del contenedor padre */
+    text-decoration: none;  /* Quita el subrayado */
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/pexels-stijn-dijkstra-1306815-2583832.jpg') no-repeat center/cover;
+    filter: blur(12px); /* Difumina solo el fondo */
+    z-index: 0; /* Coloca el fondo difuso detrás del contenido */
+}
+
+.content-sky {
+    position: absolute;
+    z-index: 1; /* Asegura que el texto esté por encima del fondo difuso */
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcio, .text-features{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.pro {
+    text-decoration: underline;
+}
+.section-1, .section-2, .section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    
+}
+
+.section-2, .section-3{
+    background-color: #f8f9fa;
+}
+.cv{
+    border-radius: 100%;
+    height: 120px;
+    aspect-ratio: 1 / 1; /* Mantiene siempre proporción 1:1 */
+    object-fit: cover;
+}
+.sobre-mi, .skills{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin: 20px 160px;
+}
+.features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.feature-1, .feature-2, .feature-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    max-width: 500px;
+}
+.img-features{
+    width: 30%; /* O el tamaño deseado */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    align-self: center;
+    filter: grayscale(30%);
+}
+
+.spann {
+    height: 10px
+}
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 1rem;
+  }
+  
+  .proyectos {
+    font-family: 'Poppins';
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .proyecto img {
+    width: 300px;
+    border-radius: 8px;
+    aspect-ratio: 16 / 13;
+  }
+
+  .proyecto-2 img{
+    width: 433.3333333px;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .proyecto-3 img{
+    margin: auto;
+    width: 325px;
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+  }
+
+  footer {
+    font-family:'Poppins';
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 50px 0;
+}
