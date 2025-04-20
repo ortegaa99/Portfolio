@@ -1,5 +1,5 @@
 .image-container {
-    width: 100vw;
+    width: 100%;
     position: relative;
     aspect-ratio: 16 / 9;
 }
@@ -126,7 +126,7 @@ ul{
 .grid-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    gap: 40px 120px;
     margin-top: 1rem;
   }
   
@@ -164,4 +164,76 @@ ul{
     color: #E5E7EB;
     text-align: center;
     padding: 50px 0;
+}
+
+@media (max-width: 768px){
+    .image-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background: url('Images/pexels-stijn-dijkstra-1306815-2583832.jpg') no-repeat center/cover;
+        filter: blur(12px); /* Difumina solo el fondo */
+        z-index: 0; /* Coloca el fondo difuso detrás del contenido */
+    }
+    .descripcio {
+        font-size: 24px;
+    }
+    .image-container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        aspect-ratio: 16 / 9;
+    }
+
+    .grid-proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        margin-top: 1rem;
+      }
+      
+      .proyectos {
+        font-family: 'Poppins';
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      .proyecto img {
+        width: 300px;
+        border-radius: 8px;
+        aspect-ratio: 16 / 13;
+      }
+    
+      .proyecto-2 img{
+        width: 300px;
+        border-radius: 8px;
+        aspect-ratio: 16 / 9;
+      }
+    
+      .proyecto-3 img{
+        margin: auto;
+        width: 325px;
+        border-radius: 8px;
+        aspect-ratio: 4 / 3;
+      }
+      .sobre-mi, .skills{
+        text-align: justify;
+        margin: 40px;
+      }
+      .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        margin: 60px;
+        gap: 20px;
+    }
 }
