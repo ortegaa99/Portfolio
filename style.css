@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+
+html, body {
+    max-width: 100%;
+}
+
 .image-container {
     width: 100%;
     position: relative;
@@ -7,11 +15,10 @@
 header {
     position: absolute; /* o fixed si quieres que se mantenga siempre visible */
     top: 20px;
-    left: 30px;
-    width: 100%;
     z-index: 10;
     color: white;
-    padding: 1rem;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
 h3{
@@ -23,6 +30,7 @@ li{
 }
 nav{
     font-family: "Poppins";
+    width: 100%;
 }
 
 a {
@@ -140,20 +148,23 @@ ul{
   }
   
   .proyecto img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
     aspect-ratio: 16 / 13;
   }
 
   .proyecto-2 img{
-    width: 433.3333333px;
+    width: 100%;
+    max-width: 433.3333333px;
     border-radius: 8px;
     aspect-ratio: 16 / 9;
   }
 
   .proyecto-3 img{
     margin: auto;
-    width: 325px;
+    width: 100%;
+    max-width: 325px;
     border-radius: 8px;
     aspect-ratio: 4 / 3;
   }
