@@ -90,7 +90,7 @@ ul{
     
 }
 
-.section-2, .section-3{
+.section-2, .contact{
     background-color: #f8f9fa;
 }
 .cv{
@@ -99,7 +99,7 @@ ul{
     aspect-ratio: 1 / 1; /* Mantiene siempre proporción 1:1 */
     object-fit: cover;
 }
-.sobre-mi, .skills{
+.sobre-mi, .skills, .contact-me{
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     margin: 20px 160px;
@@ -129,7 +129,8 @@ ul{
 }
 
 .spann {
-    height: 50px
+    height: 50px;
+    background-color: white;
 }
 .grid-proyectos {
     display: grid;
@@ -168,6 +169,12 @@ ul{
     border-radius: 8px;
     aspect-ratio: 4 / 3;
   }
+  .contact, .contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+  }
 
   footer {
     font-family:'Poppins';
@@ -177,7 +184,24 @@ ul{
     padding: 50px 0;
 }
 
+.contact-icons > a {
+    margin: 10px 10px 10px;
+}
 @media (max-width: 768px){
+    header {
+        position: absolute; /* o fixed si quieres que se mantenga siempre visible */
+        top: 20px;
+        z-index: 10;
+        color: white;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .image-background {
         position: absolute;
         top: 0;
@@ -246,5 +270,16 @@ ul{
         padding-top: 30px;
         margin: 60px;
         gap: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+    header {
+        position: absolute; /* o fixed si quieres que se mantenga siempre visible */
+        top: 20px;
+        z-index: 10;
+        color: white;
+        box-sizing: border-box;
+        padding: 0 16px;
     }
 }
